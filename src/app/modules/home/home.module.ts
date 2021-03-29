@@ -9,12 +9,7 @@ import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [HomeComponent, MapComponent, ListComponent],
-  imports: [
-    CommonModule,
-    RouterModule,
-    HomeRoutingModule,
-    SharedModule
-  ],
-  exports: [RouterModule]
+  imports: [CommonModule, RouterModule, HomeRoutingModule, SharedModule],
+  exports: [RouterModule],
 })
-export class HomeModule { }
+export class HomeModule {}

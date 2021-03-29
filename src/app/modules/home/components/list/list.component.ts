@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.scss'],
 })
 export class ListComponent {
-  clubs: string[] = ['Czarni Słupsk', 'Grudziądz Olimpia', 'Gdańsk Zadymiarze z Zaspy', 'Arka Gdynia', 'Lech Poznań'];
+  clubs = [
+    'Czarni Słupsk',
+    'Grudziądz Olimpia',
+    'Gdańsk Zadymiarze z Zaspy',
+    'Arka Gdynia',
+    'Lech Poznań',
+  ];
 }

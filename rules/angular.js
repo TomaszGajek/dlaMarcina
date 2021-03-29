@@ -38,7 +38,6 @@ module.exports = {
 
         // TYPESCRIPT
         '@typescript-eslint/adjacent-overload-signatures': 'error',
-        '@typescript-eslint/class-name-casing': 'error',
         '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/member-ordering': [
           'error',
