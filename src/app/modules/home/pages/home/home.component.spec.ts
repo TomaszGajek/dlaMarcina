@@ -6,6 +6,8 @@ describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
 
+  //fakeAsync dla rxjs
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ HomeComponent ]
