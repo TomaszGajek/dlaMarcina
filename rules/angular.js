@@ -32,9 +32,12 @@ module.exports = {
       rules: {
         'no-unused-vars': ['error', { vars: 'all', args: 'none', ignoreRestSiblings: true }],
         'no-useless-constructor': 'off',
+        'implicit-arrow-linebreak': 'always',
 
         // IMPORT
         'import/prefer-default-export': 'off',
+        'import/no-unresolved': 'off',
+        'import/extensions': ['error', 'ignorePackages', { ts: 'never' }],
 
         // TYPESCRIPT
         '@typescript-eslint/adjacent-overload-signatures': 'error',

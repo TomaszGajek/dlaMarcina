@@ -1,5 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { Store } from '@ngrx/store';
+import { of } from 'rxjs';
 
 import { ListComponent } from './list.component';
 
@@ -11,6 +13,12 @@ describe('ListComponent', () => {
     waitForAsync(() => {
       TestBed.configureTestingModule({
         declarations: [ListComponent],
+        providers: [
+          {
+            provide: Store,
+            useValue: jasmine.createSpyObj('Store', ['dispatch', 'select']),
+          },
+        ],
         schemas: [CUSTOM_ELEMENTS_SCHEMA],
       }).compileComponents();
     }),
