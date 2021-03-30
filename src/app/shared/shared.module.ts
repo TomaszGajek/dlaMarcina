@@ -7,16 +7,12 @@ const SHARED_MODULES: unknown[] = [
   FlexLayoutModule,
   FormsModule,
   ReactiveFormsModule,
-  MatListModule
+  MatListModule,
 ];
 
 @NgModule({
   declarations: [],
-  imports: [
-    SHARED_MODULES
-  ],
-  exports: [
-    SHARED_MODULES
-  ]
+  imports: [SHARED_MODULES],
+  exports: [SHARED_MODULES],
 })
-export class SharedModule { }
+export class SharedModule {}
